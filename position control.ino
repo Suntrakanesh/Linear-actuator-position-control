@@ -9,8 +9,8 @@ int position;
 void setup()
 {
 pinMode( in1 , OUTPUT );
-pinMode( engage , OUTPUT );
-pinMode( disengage , OUTPUT );
+pinMode( engage , INPUT );
+pinMode( disengage , INPUT );
 pinMode( in2 , OUTPUT );
 pinMode( A0 , INPUT );
 Serial.begin(9600);
