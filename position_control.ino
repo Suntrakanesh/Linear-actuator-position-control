@@ -39,13 +39,15 @@ void loop()
   
     switch(drive)
     {
+       //Condition for 2WD
       case 1: while( position != value_1 )
                  {
                    digitalWrite( in_2 , HIGH );
                    digitalWrite( in_1, LOW );
                  }
                  break;
-                 
+          
+      // Condition for open diff          
       case 2: if( position > threshold )
                 {
                    while( position != threshold )
@@ -63,7 +65,8 @@ void loop()
                      }
                  } 
                  break;
-                 
+        
+       // Condition for locked diff
        case 3:  while( position != value_2 )
                    {
                       digitalWrite( in_2 , LOW );
