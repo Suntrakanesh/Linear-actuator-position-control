@@ -8,7 +8,7 @@ int in_1 = 8; // input to relay ( channel 1 ) , for forward movement of actuator
 int in_2 = 7; // input to relay ( channel 2 ) , for backward movement of actuator's shaft
 float threshold = --- ;  //middle position of shaft , need to find 
 float value_1 = ---- ; //initial position of shaft , need to find
-floar value_2 = ---- ; //final position of shaft , need to find
+float value_2 = ---- ; //final position of shaft , need to find
 
 void setup()
 {
